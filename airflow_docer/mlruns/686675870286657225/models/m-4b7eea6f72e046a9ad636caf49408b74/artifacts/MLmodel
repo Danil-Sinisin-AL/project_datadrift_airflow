@@ -1,0 +1,22 @@
+artifact_path: file:///opt/airflow/mlruns/686675870286657225/models/m-4b7eea6f72e046a9ad636caf49408b74/artifacts
+flavors:
+  catboost:
+    catboost_version: 1.2.5
+    code: null
+    data: model.cb
+    model_type: CatBoostClassifier
+    save_format: cbm
+  python_function:
+    data: model.cb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.catboost
+    python_version: 3.11.14
+mlflow_version: 3.8.1
+model_id: m-4b7eea6f72e046a9ad636caf49408b74
+model_size_bytes: 116848
+model_uuid: m-4b7eea6f72e046a9ad636caf49408b74
+prompts: null
+run_id: 22a2b6e42b0e4a9a8791346f5de303e2
+utc_time_created: '2026-01-16 04:55:24.451071'

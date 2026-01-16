@@ -1,0 +1,82 @@
+{"timestamp":"2026-01-15T05:17:40.607327Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-15T05:17:40.608657Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_drift_monitoring.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-15T05:17:42.973021Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":9,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:42.973155Z","level":"warning","event":"The `airflow.operators.python.BranchPythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.BranchPythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":9,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:42.973232Z","level":"warning","event":"The `airflow.operators.empty.EmptyOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.empty.EmptyOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":10,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:42.990146Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:42.990527Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:42.990867Z","level":"info","event":"Current task name:retrain_task","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:42.991127Z","level":"info","event":"Dag name:drift_monitoring_dag","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:42.991689Z","level":"info","event":"Запуск переобучения модели...","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.001903Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.002288Z","level":"info","event":"Информация о данных:","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.002561Z","level":"info","event":"  Размер: (300, 7)","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.003013Z","level":"info","event":"  Колонки: ['Unnamed: 0', 'age', 'sex', 'credit_amount', 'duration', 'foreign_worker_', 'class']","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.003301Z","level":"info","event":"  Типы данных:","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.003649Z","level":"info","event":"    Unnamed: 0: int64","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.003972Z","level":"info","event":"    age: int64","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.004176Z","level":"info","event":"    sex: object","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.004374Z","level":"info","event":"    credit_amount: int64","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.004567Z","level":"info","event":"    duration: int64","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.004761Z","level":"info","event":"    foreign_worker_: object","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.005013Z","level":"info","event":"    class: int64","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.005209Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.005406Z","level":"info","event":"Распределение целевой переменной:","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.005606Z","level":"info","event":"1    163","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.005830Z","level":"info","event":"0    137","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.006118Z","level":"info","event":"Name: class, dtype: int64","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.006316Z","level":"warning","event":"The filesystem tracking backend (e.g., './mlruns') will be deprecated in February 2026. Consider transitioning to a database backend (e.g., 'sqlite:///mlflow.db') to take advantage of the latest MLflow features. See https://github.com/mlflow/mlflow/issues/18534 for more details and migration guidance. For migrating existing data, https://github.com/mlflow/mlflow-export-import can be used.","category":"FutureWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/mlflow/tracking/_tracking_service/utils.py","lineno":178,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:43.013456Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:43.013801Z","level":"info","event":"Настройка PyCaret...","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:44.130027Z","level":"info","event":"PyCaret настроен успешно!","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:44.146312Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/joblib/parallel.py","lineno":775,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:44.645359Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/joblib/parallel.py","lineno":775,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:44.699457Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/joblib/parallel.py","lineno":775,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:44.800132Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/sklearn/ensemble/_base.py","lineno":229,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:44.809044Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/sklearn/ensemble/_base.py","lineno":229,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:44.879234Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/joblib/parallel.py","lineno":775,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:44.982468Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/sklearn/ensemble/_base.py","lineno":229,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:44.990663Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/sklearn/ensemble/_base.py","lineno":229,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:45.061746Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/joblib/parallel.py","lineno":775,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:45.158494Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/sklearn/ensemble/_base.py","lineno":229,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:45.169484Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/sklearn/ensemble/_base.py","lineno":229,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:45.239507Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/joblib/parallel.py","lineno":775,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:45.339659Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/sklearn/ensemble/_base.py","lineno":229,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:45.348193Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/sklearn/ensemble/_base.py","lineno":229,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:45.414307Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/joblib/parallel.py","lineno":775,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:45.514797Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/sklearn/ensemble/_base.py","lineno":229,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:45.523259Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/sklearn/ensemble/_base.py","lineno":229,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:45.727947Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/joblib/parallel.py","lineno":775,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:49.973694Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/joblib/parallel.py","lineno":775,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:50.853688Z","level":"warning","event":"Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1","category":"UserWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/joblib/parallel.py","lineno":775,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T05:17:51.752927Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.753393Z","level":"info","event":"Результаты сравнения моделей:","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.755802Z","level":"info","event":"                                 Model  Accuracy     AUC  Recall   Prec.      F1","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.756049Z","level":"info","event":"lr                 Logistic Regression    0.4917  0.4545  0.7385  0.5200  0.6060","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.756249Z","level":"info","event":"catboost           CatBoost Classifier    0.5250  0.5269  0.6000  0.5555  0.5737","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.756452Z","level":"info","event":"gbc       Gradient Boosting Classifier    0.5000  0.4720  0.6154  0.5341  0.5710","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.756742Z","level":"info","event":"rf            Random Forest Classifier    0.5000  0.4811  0.5923  0.5351  0.5600","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.756990Z","level":"info","event":"dt            Decision Tree Classifier    0.4708  0.4689  0.4923  0.5155  0.5021","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.757299Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.757509Z","level":"info","event":"ЛУЧШАЯ МОДЕЛЬ: LogisticRegression","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.757818Z","level":"info","event":"Параметры модели:","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.758019Z","level":"info","event":"  C: 1.0","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.758217Z","level":"info","event":"  class_weight: None","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.758430Z","level":"info","event":"  dual: False","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.758661Z","level":"info","event":"  fit_intercept: True","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.758936Z","level":"info","event":"  intercept_scaling: 1","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.759290Z","level":"info","event":"  l1_ratio: None","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.759692Z","level":"info","event":"  max_iter: 1000","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.759947Z","level":"info","event":"  multi_class: auto","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.760149Z","level":"info","event":"  n_jobs: None","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.760349Z","level":"info","event":"  penalty: l2","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:51.798001Z","level":"info","event":"Transformation Pipeline and Model Successfully Saved","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:52.022762Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:52.023169Z","level":"info","event":"Модель сохранена: /opt/airflow/models/best_model_20260115_051751.pkl","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:52.024029Z","level":"info","event":"Результаты эксперимента сохранены: /opt/airflow/models/experiment_results_20260115_051752.csv","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:52.024277Z","level":"info","event":"Метаданные сохранены: /opt/airflow/models/metadata_20260115_051752.json","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:52.096522Z","level":"error","event":"Task failed with exception","logger":"task","filename":"task_runner.py","lineno":1078,"error_detail":[{"exc_type":"NameError","exc_value":"name 'curr_dfshape' is not defined","exc_notes":[],"syntax_error":null,"is_cause":false,"frames":[{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":1004,"name":"run"},{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":1405,"name":"_execute_task"},{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/sdk/bases/operator.py","lineno":417,"name":"wrapper"},{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/standard/operators/python.py","lineno":214,"name":"execute"},{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/standard/operators/python.py","lineno":237,"name":"execute_callable"},{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/sdk/execution_time/callback_runner.py","lineno":82,"name":"run"},{"filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":207,"name":"retrain_model"}],"is_group":false,"exceptions":[]}]}
+{"timestamp":"2026-01-15T05:17:52.116096Z","level":"info","event":"Task instance in failure state","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:52.116467Z","level":"info","event":"Task start","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:52.117537Z","level":"info","event":"Task:<Task(PythonOperator): retrain_task>","logger":"task.stdout"}
+{"timestamp":"2026-01-15T05:17:52.117890Z","level":"info","event":"Failure caused by name 'curr_dfshape' is not defined","logger":"task.stdout"}

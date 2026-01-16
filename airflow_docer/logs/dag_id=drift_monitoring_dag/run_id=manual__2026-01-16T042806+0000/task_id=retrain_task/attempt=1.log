@@ -1,0 +1,35 @@
+{"timestamp":"2026-01-16T04:28:17.646925Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-16T04:28:17.647919Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_drift_monitoring.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-16T04:28:20.473732Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":14,"logger":"py.warnings"}
+{"timestamp":"2026-01-16T04:28:20.473878Z","level":"warning","event":"The `airflow.operators.python.BranchPythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.BranchPythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":14,"logger":"py.warnings"}
+{"timestamp":"2026-01-16T04:28:20.473949Z","level":"warning","event":"The `airflow.operators.empty.EmptyOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.empty.EmptyOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":15,"logger":"py.warnings"}
+{"timestamp":"2026-01-16T04:28:20.492551Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.493044Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.493427Z","level":"info","event":"Current task name:retrain_task","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.493685Z","level":"info","event":"Dag name:drift_monitoring_dag","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.494618Z","level":"info","event":"Запуск переобучения модели...","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.504537Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.504807Z","level":"info","event":"Информация о данных:","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.505005Z","level":"info","event":"  Размер: (300, 7)","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.505212Z","level":"info","event":"  Колонки: ['Unnamed: 0', 'age', 'sex', 'credit_amount', 'duration', 'foreign_worker_', 'class']","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.505456Z","level":"info","event":"  Типы данных:","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.505746Z","level":"info","event":"    Unnamed: 0: int64","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.506042Z","level":"info","event":"    age: int64","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.506254Z","level":"info","event":"    sex: object","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.506465Z","level":"info","event":"    credit_amount: int64","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.506672Z","level":"info","event":"    duration: int64","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.506882Z","level":"info","event":"    foreign_worker_: object","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.507089Z","level":"info","event":"    class: int64","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.507294Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.507500Z","level":"info","event":"Распределение целевой переменной:","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.507729Z","level":"info","event":"1    163","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.507983Z","level":"info","event":"0    137","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.508207Z","level":"info","event":"Name: class, dtype: int64","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.508379Z","level":"warning","event":"The filesystem tracking backend (e.g., './mlruns') will be deprecated in February 2026. Consider transitioning to a database backend (e.g., 'sqlite:///mlflow.db') to take advantage of the latest MLflow features. See https://github.com/mlflow/mlflow/issues/18534 for more details and migration guidance. For migrating existing data, https://github.com/mlflow/mlflow-export-import can be used.","category":"FutureWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/mlflow/tracking/_tracking_service/utils.py","lineno":178,"logger":"py.warnings"}
+{"timestamp":"2026-01-16T04:28:20.571655Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.572072Z","level":"info","event":"Настройка PyCaret...","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.571686Z","level":"error","event":"Task failed with exception","logger":"task","filename":"task_runner.py","lineno":1078,"error_detail":[{"exc_type":"NameError","exc_value":"name 'pritn' is not defined","exc_notes":[],"syntax_error":null,"is_cause":false,"frames":[{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":1004,"name":"run"},{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":1405,"name":"_execute_task"},{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/sdk/bases/operator.py","lineno":417,"name":"wrapper"},{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/standard/operators/python.py","lineno":214,"name":"execute"},{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/standard/operators/python.py","lineno":237,"name":"execute_callable"},{"filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/sdk/execution_time/callback_runner.py","lineno":82,"name":"run"},{"filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":153,"name":"retrain_model"}],"is_group":false,"exceptions":[]}]}
+{"timestamp":"2026-01-16T04:28:20.613319Z","level":"info","event":"Task instance in failure state","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.615532Z","level":"info","event":"Task start","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.616366Z","level":"info","event":"Task:<Task(PythonOperator): retrain_task>","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:28:20.616726Z","level":"info","event":"Failure caused by name 'pritn' is not defined","logger":"task.stdout"}

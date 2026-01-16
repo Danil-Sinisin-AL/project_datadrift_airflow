@@ -1,0 +1,32 @@
+artifact_path: file:///opt/airflow/mlruns/888601144869926503/models/m-c9d9843df5984860b31806cba9f28bc2/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.14
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.4.2
+is_signature_from_type_hint: false
+mlflow_version: 3.8.1
+model_id: m-c9d9843df5984860b31806cba9f28bc2
+model_size_bytes: 905
+model_uuid: m-c9d9843df5984860b31806cba9f28bc2
+prompts: null
+run_id: 33e0847045fb4535856712c56cad8e46
+signature:
+  inputs: '[{"type": "long", "name": "Unnamed: 0", "required": true}, {"type": "long",
+    "name": "age", "required": true}, {"type": "string", "name": "sex", "required":
+    true}, {"type": "long", "name": "credit_amount", "required": true}, {"type": "long",
+    "name": "duration", "required": true}, {"type": "string", "name": "foreign_worker_",
+    "required": true}]'
+  outputs: '[{"type": "long", "name": "class", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-01-15 20:42:03.253542'

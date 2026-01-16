@@ -1,0 +1,14 @@
+artifact_uri: file:///opt/airflow/mlruns/888601144869926503/d3801ffcbf5c46bba62a236e3994abb6/artifacts
+end_time: 1768532543939
+entry_point_name: ''
+experiment_id: '888601144869926503'
+lifecycle_stage: active
+run_id: d3801ffcbf5c46bba62a236e3994abb6
+run_name: pycaret_run_20260116_030145
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1768532505429
+status: 3
+tags: []
+user_id: airflow

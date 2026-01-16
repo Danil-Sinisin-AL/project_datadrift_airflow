@@ -1,0 +1,15 @@
+creation_timestamp: 1768539508435
+current_stage: Staging
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1768539562036
+model_id: m-e5659d60ffd54707a6ce692885ae7b69
+name: CreditRiskModel
+run_id: 7db3c2adbca14fbbb00024ff2543a8fb
+run_link: null
+source: models:/m-e5659d60ffd54707a6ce692885ae7b69
+status: READY
+status_message: null
+storage_location: file:///opt/airflow/mlruns/888601144869926503/models/m-e5659d60ffd54707a6ce692885ae7b69/artifacts
+user_id: null
+version: 64

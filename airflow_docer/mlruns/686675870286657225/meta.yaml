@@ -1,0 +1,6 @@
+artifact_location: file:///opt/airflow/mlruns/686675870286657225
+creation_time: 1768495738137
+experiment_id: '686675870286657225'
+last_update_time: 1768495738137
+lifecycle_stage: active
+name: initial_model_registration

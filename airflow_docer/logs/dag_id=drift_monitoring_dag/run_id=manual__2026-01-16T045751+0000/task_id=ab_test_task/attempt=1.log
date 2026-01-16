@@ -1,0 +1,70 @@
+{"timestamp":"2026-01-16T04:59:31.827265Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-16T04:59:31.828343Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_drift_monitoring.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-16T04:59:35.201059Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":14,"logger":"py.warnings"}
+{"timestamp":"2026-01-16T04:59:35.201200Z","level":"warning","event":"The `airflow.operators.python.BranchPythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.BranchPythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":14,"logger":"py.warnings"}
+{"timestamp":"2026-01-16T04:59:35.201278Z","level":"warning","event":"The `airflow.operators.empty.EmptyOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.empty.EmptyOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":15,"logger":"py.warnings"}
+{"timestamp":"2026-01-16T04:59:35.228212Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.229315Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.230236Z","level":"info","event":"Current task name:ab_test_task","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.231075Z","level":"info","event":"Dag name:drift_monitoring_dag","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.232897Z","level":"info","event":"Запуск A/B тестирования...","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.238994Z","level":"warning","event":"The filesystem tracking backend (e.g., './mlruns') will be deprecated in February 2026. Consider transitioning to a database backend (e.g., 'sqlite:///mlflow.db') to take advantage of the latest MLflow features. See https://github.com/mlflow/mlflow/issues/18534 for more details and migration guidance. For migrating existing data, https://github.com/mlflow/mlflow-export-import can be used.","category":"FutureWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/mlflow/tracking/_tracking_service/utils.py","lineno":178,"logger":"py.warnings"}
+{"timestamp":"2026-01-16T04:59:35.249908Z","level":"info","event":"Тестовые данные: 300 образцов, 5 признаков","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.255850Z","level":"info","event":"     age  sex  credit_amount  duration  foreign_worker_","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.256133Z","level":"info","event":"0     49    0           5943        24                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.256357Z","level":"info","event":"1     50    0            339        12                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.256571Z","level":"info","event":"2     53    0           5190        27                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.256784Z","level":"info","event":"3     31    0           3518         6                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.256974Z","level":"info","event":"4     29    0           7472        12                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.257230Z","level":"info","event":"..   ...  ...            ...       ...              ...","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.257488Z","level":"info","event":"295   36    0           3430        24                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.257751Z","level":"info","event":"296   26    0           6568        24                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.257983Z","level":"info","event":"297   34    0           1437         9                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.258200Z","level":"info","event":"298   31    0           4463        36                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.258414Z","level":"info","event":"299   27    0            454         6                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.258640Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.258872Z","level":"info","event":"[300 rows x 5 columns]","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:35.278103Z","level":"warning","event":"The filesystem model registry backend (e.g., './mlruns') will be deprecated in February 2026. Consider transitioning to a database backend (e.g., 'sqlite:///mlflow.db') to take advantage of the latest MLflow features. See https://github.com/mlflow/mlflow/issues/18534 for more details and migration guidance. For migrating existing data, https://github.com/mlflow/mlflow-export-import can be used.","category":"FutureWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/mlflow/tracking/_model_registry/utils.py","lineno":216,"logger":"py.warnings"}
+{"timestamp":"2026-01-16T04:59:41.620347Z","level":"info","event":"Ошибка загрузки Production модели: Invalid attribute key 'stage' specified. Valid keys are '{'version_number', 'name', 'source_path', 'run_id'}'","logger":"task.stdout"}
+{"timestamp":"2026-01-16T04:59:46.292476Z","level":"warning","event":"``mlflow.tracking.client.MlflowClient.get_latest_versions`` is deprecated since 2.9.0. Model registry stages will be removed in a future major release. To learn more about the deprecation of model registry stages, see our migration guide here: https://mlflow.org/docs/latest/model-registry.html#migrating-from-stages","category":"FutureWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":432,"logger":"py.warnings"}
+{"timestamp":"2026-01-16T05:00:15.902123Z","level":"info","event":"✓ Staging модель загружена: версия 64","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:00:15.903770Z","level":"info","event":"Загрузка начальной модели из файла: /opt/airflow/dags/catboost_model.cbm","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:00:15.912341Z","level":"info","event":"Начальная модель загружена как Production модель","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:00:16.365425Z","level":"error","event":"2026/01/16 05:00:16 WARNING mlflow.models.model: `artifact_path` is deprecated. Please use `name` instead.","logger":"task.stderr"}
+{"timestamp":"2026-01-16T05:00:26.944274Z","level":"error","event":"Registered model 'CreditRiskModel' already exists. Creating a new version of this model...","logger":"task.stderr"}
+{"timestamp":"2026-01-16T05:00:43.276081Z","level":"error","event":"Created version '65' of model 'CreditRiskModel'.","logger":"task.stderr"}
+{"timestamp":"2026-01-16T05:00:43.521006Z","level":"info","event":"Начальная модель зарегистрирована в MLflow (catboost flavor)","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:00:54.029885Z","level":"warning","event":"``mlflow.tracking.client.MlflowClient.transition_model_version_stage`` is deprecated since 2.9.0. Model registry stages will be removed in a future major release. To learn more about the deprecation of model registry stages, see our migration guide here: https://mlflow.org/docs/latest/model-registry.html#migrating-from-stages","category":"FutureWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":483,"logger":"py.warnings"}
+{"timestamp":"2026-01-16T05:01:11.915060Z","level":"info","event":"Начальная модель переведена в Production: версия 65","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:11.962652Z","level":"info","event":"Ошибка при вычислении метрик Production модели: /src/catboost/catboost/libs/data/model_dataset_compatibility.cpp:81: At position 0 should be feature with name Unnamed: 0 (found age).","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:11.967782Z","level":"info","event":"     age  sex  credit_amount  duration  foreign_worker_","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:11.968146Z","level":"info","event":"0     49    0           5943        24                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:11.968358Z","level":"info","event":"1     50    0            339        12                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:11.968670Z","level":"info","event":"2     53    0           5190        27                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:11.968968Z","level":"info","event":"3     31    0           3518         6                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:11.969209Z","level":"info","event":"4     29    0           7472        12                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:11.969572Z","level":"info","event":"..   ...  ...            ...       ...              ...","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:11.969816Z","level":"info","event":"295   36    0           3430        24                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:11.970085Z","level":"info","event":"296   26    0           6568        24                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:11.970387Z","level":"info","event":"297   34    0           1437         9                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:11.970618Z","level":"info","event":"298   31    0           4463        36                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:11.970922Z","level":"info","event":"299   27    0            454         6                0","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:11.971184Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:11.971454Z","level":"info","event":"[300 rows x 5 columns]","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:29.551669Z","level":"info","event":"Список фич: ['age', 'sex', 'credit_amount', 'duration', 'foreign_worker_']","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:29.553418Z","level":"info","event":"Start_PREDICT","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:29.558657Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:29.558943Z","level":"info","event":"Staging модель (v64) метрики:","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:29.559212Z","level":"info","event":"  accuracy: 0.5333","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:29.559432Z","level":"info","event":"  precision: 0.5117","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:29.559655Z","level":"info","event":"  recall: 0.5333","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:29.559853Z","level":"info","event":"  f1: 0.4753","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:30.108006Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:30.108286Z","level":"info","event":"⚠ Production модель не найдена. Это первый запуск.","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:30.108496Z","level":"info","event":"Staging модель будет автоматически переведена в Production.","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:30.121927Z","level":"warning","event":"In the future `np.bool` will be defined as the corresponding NumPy scalar.","category":"FutureWarning","filename":"/home/airflow/.local/lib/python3.11/site-packages/airflow/serialization/serializers/numpy.py","lineno":75,"logger":"py.warnings"}
+{"timestamp":"2026-01-16T05:01:30.219357Z","level":"info","event":"Done. Returned value was: {'production_metrics': {}, 'staging_metrics': {'accuracy': 0.5333333333333333, 'precision': 0.5116623356169776, 'recall': 0.5333333333333333, 'f1': 0.4753012462989741}, 'metric_diffs': {}, 'staging_version': 64, 'has_production': False}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-01-16T05:01:30.219629Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019bc52a-c354-7c53-bb39-4f5022e9f787'), task_id='ab_test_task', dag_id='drift_monitoring_dag', run_id='manual__2026-01-16T04:57:51+00:00', try_number=1, dag_version_id=UUID('019bc280-6888-7643-982a-2cc533e5f339'), map_index=-1, hostname='20e52e004c12', context_carrier={}, task=<Task(PythonOperator): ab_test_task>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2026, 1, 16, 4, 59, 31, 448522, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1450}
+{"timestamp":"2026-01-16T05:01:30.250323Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:30.250946Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-16T05:01:30.251371Z","level":"info","event":"Task operator:<Task(PythonOperator): ab_test_task>","logger":"task.stdout"}

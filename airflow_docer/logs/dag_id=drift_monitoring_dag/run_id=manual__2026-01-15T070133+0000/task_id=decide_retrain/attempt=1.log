@@ -1,0 +1,17 @@
+{"timestamp":"2026-01-15T07:01:42.659064Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-15T07:01:42.660196Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_drift_monitoring.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-15T07:01:45.073525Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":9,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T07:01:45.073672Z","level":"warning","event":"The `airflow.operators.python.BranchPythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.BranchPythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":9,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T07:01:45.073746Z","level":"warning","event":"The `airflow.operators.empty.EmptyOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.empty.EmptyOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":10,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T07:01:45.093353Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-15T07:01:45.093684Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-15T07:01:45.093929Z","level":"info","event":"Current task name:decide_retrain","logger":"task.stdout"}
+{"timestamp":"2026-01-15T07:01:45.094153Z","level":"info","event":"Dag name:drift_monitoring_dag","logger":"task.stdout"}
+{"timestamp":"2026-01-15T07:01:45.102983Z","level":"info","event":"Done. Returned value was: retrain_task","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-01-15T07:01:45.103132Z","level":"info","event":"Branch into retrain_task","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"branch.py","lineno":44}
+{"timestamp":"2026-01-15T07:01:45.103448Z","level":"info","event":"Following branch {'retrain_task'}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":146}
+{"timestamp":"2026-01-15T07:01:45.103882Z","level":"info","event":"Skipping tasks [('skip_retrain_task', -1)]","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":185}
+{"timestamp":"2026-01-15T07:01:45.118204Z","level":"info","event":"Skipping downstream tasks.","logger":"task","filename":"task_runner.py","lineno":1019}
+{"timestamp":"2026-01-15T07:01:45.146988Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-15T07:01:45.147572Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-15T07:01:45.148055Z","level":"info","event":"Task operator:<Task(BranchPythonOperator): decide_retrain>","logger":"task.stdout"}

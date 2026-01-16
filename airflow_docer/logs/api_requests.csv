@@ -1,0 +1,10 @@
+timestamp,endpoint,method,status_code,request_ip,user_id,request_data,response_data
+2026-01-15T19:25:37.729103,/predict,GET,405,172.18.0.1,,,
+2026-01-15T19:26:05.640925,/predict,POST,500,172.18.0.1,12345,"{""user_id"": 12345, ""features"": {""feature1"": 0.5, ""feature2"": 0.3}}","{""error"": ""Production model not loaded""}"
+2026-01-15T19:26:16.672723,/,POST,404,172.18.0.1,12345,"{""user_id"": 12345, ""features"": {""feature1"": 0.5, ""feature2"": 0.3}}",
+2026-01-15T19:26:26.316672,/,GET,404,172.18.0.1,,,
+2026-01-15T19:26:26.936732,/,GET,404,172.18.0.1,,,
+2026-01-15T19:27:36.826366,/predict,GET,405,172.18.0.1,,,
+2026-01-15T19:27:37.080140,/predict,GET,405,172.18.0.1,,,
+2026-01-15T19:27:42.475333,/predict,POST,500,172.18.0.1,12345,"{""user_id"": 12345, ""features"": {""feature1"": 0.5, ""feature2"": 0.3}}","{""error"": ""Production model not loaded""}"
+2026-01-15T19:28:51.481264,/update_split,POST,200,172.18.0.1,,"{""production_split"": 0.5}","{""message"": ""Split updated to 50%/50%"", ""new_split"": 0.5, ""old_split"": 0.7, ""production_percent"": 50.0, ""staging_percent"": 50.0, ""status"": ""success""}"

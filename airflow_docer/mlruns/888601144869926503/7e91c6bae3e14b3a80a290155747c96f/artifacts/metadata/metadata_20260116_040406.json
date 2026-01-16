@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-01-16T04:04:06.704569",
+  "best_model": "LogisticRegression",
+  "model_path": "/opt/airflow/models/best_model_20260116_040406.pkl",
+  "data_shape": [
+    300,
+    7
+  ],
+  "data_columns": [
+    "Unnamed: 0",
+    "age",
+    "sex",
+    "credit_amount",
+    "duration",
+    "foreign_worker_",
+    "class"
+  ],
+  "training_date": "2026-01-16",
+  "drift_detected": true
+}

@@ -1,0 +1,20 @@
+{"timestamp":"2026-01-15T20:00:27.388660Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-15T20:00:27.389749Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_drift_monitoring.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-15T20:00:30.200288Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":14,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T20:00:30.200461Z","level":"warning","event":"The `airflow.operators.python.BranchPythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.BranchPythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":14,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T20:00:30.200544Z","level":"warning","event":"The `airflow.operators.empty.EmptyOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.empty.EmptyOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_drift_monitoring.py","lineno":15,"logger":"py.warnings"}
+{"timestamp":"2026-01-15T20:00:30.223663Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-15T20:00:30.224100Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-15T20:00:30.226169Z","level":"info","event":"Current task name:decide_promotion","logger":"task.stdout"}
+{"timestamp":"2026-01-15T20:00:30.227140Z","level":"info","event":"Dag name:drift_monitoring_dag","logger":"task.stdout"}
+{"timestamp":"2026-01-15T20:00:30.266656Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-01-15T20:00:30.268851Z","level":"info","event":"⚠ Staging метрики отсутствуют. Переобучение, возможно, не завершено или модель не переведена в Staging.","logger":"task.stdout"}
+{"timestamp":"2026-01-15T20:00:30.269141Z","level":"info","event":"Решение: НЕ переводить модель в Production (Staging модель отсутствует)","logger":"task.stdout"}
+{"timestamp":"2026-01-15T20:00:30.267541Z","level":"info","event":"Done. Returned value was: promote_to_production_task","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"python.py","lineno":216}
+{"timestamp":"2026-01-15T20:00:30.267671Z","level":"info","event":"Branch into promote_to_production_task","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"branch.py","lineno":44}
+{"timestamp":"2026-01-15T20:00:30.268213Z","level":"info","event":"Following branch {'promote_to_production_task'}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":146}
+{"timestamp":"2026-01-15T20:00:30.268584Z","level":"info","event":"Skipping tasks [('skip_promotion_task', -1)]","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":185}
+{"timestamp":"2026-01-15T20:00:30.284020Z","level":"info","event":"Skipping downstream tasks.","logger":"task","filename":"task_runner.py","lineno":1019}
+{"timestamp":"2026-01-15T20:00:30.320412Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-15T20:00:30.320979Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-15T20:00:30.321367Z","level":"info","event":"Task operator:<Task(BranchPythonOperator): decide_promotion>","logger":"task.stdout"}
